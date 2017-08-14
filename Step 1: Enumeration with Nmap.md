@@ -1,5 +1,5 @@
 # Enumerate the machine using nmap
-
+`
 nmap -p 0-65535 -T5 -O -A 172.31.6.2
 
 Starting Nmap 7.01 ( https://nmap.org ) at 2017-08-07 11:47 EDT
@@ -79,7 +79,8 @@ PORT      STATE SERVICE     VERSION
 |   100003  2,3,4       2049/udp  nfs
 |   100005  1,2,3      44128/udp  mountd
 |   100005  1,2,3      51052/tcp  mountd
-|   100021  1,3,4      39076/tcp  nlockmgr|   100021  1,3,4      46434/udp  nlockmgr
+|   100021  1,3,4      39076/tcp  nlockmgr
+|   100021  1,3,4      46434/udp  nlockmgr
 |   100024  1          40871/tcp  status
 |   100024  1          58632/udp  status
 |   100227  2,3         2049/tcp  nfs_acl
@@ -107,27 +108,26 @@ PORT      STATE SERVICE     VERSION
 |   100003  2,3,4       2049/tcp  nfs
 |   100003  2,3,4       2049/udp  nfs
 |   100005  1,2,3      44128/udp  mountd
-|   100005  1,2,3      51052/tcp  mount
+|   100005  1,2,3      51052/tcp  mountd
 |   100021  1,3,4      39076/tcp  nlockmgr
 |   100021  1,3,4      46434/udp  nlockmgr
 |   100024  1          40871/tcp  status
 |   100024  1          58632/udp  status
-#|   100227  2,3         2049/tcp  nfs_acl
+|   100227  2,3         2049/tcp  nfs_acl
 |_  100227  2,3         2049/udp  nfs_acl
 42088/tcp open  ssh         Apache Mina sshd 0.8.0 (protocol 2.0)
 | ssh-hostkey: 
 |_  2048 97:bb:2c:13:54:2f:88:0d:00:c6:80:24:30:d6:29:54 (RSA)
-d48050/tcp open  unknown
+48050/tcp open  unknown
 51052/tcp open  mountd      1-3 (RPC #100005)
 | rpcinfo: 
 |   program version   port/proto  service
-S|   100000  2,3,4        111/tcp  rpcbind
-#
+|   100000  2,3,4        111/tcp  rpcbind
 |   100000  2,3,4        111/udp  rpcbind
 |   100003  2,3,4       2049/tcp  nfs
 |   100003  2,3,4       2049/udp  nfs
 |   100005  1,2,3      44128/udp  mountd
-S|   100005  1,2,3      51052/tcp  mountd
+|   100005  1,2,3      51052/tcp  mountd
 |   100021  1,3,4      39076/tcp  nlockmgr
 |   100021  1,3,4      46434/udp  nlockmgr
 |   100024  1          40871/tcp  status
@@ -182,7 +182,7 @@ HOP RTT       ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 340.53 seconds
-
+`
 
 # Step 2. Refine the Results:
 Using the results of this scan we can further enumerate the identified services, ports and access points
