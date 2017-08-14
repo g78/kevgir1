@@ -163,8 +163,7 @@ nikto -h 172.31.6.2:8081
 + Entry '/templates/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
 + Entry '/tmp/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
 + Cookie 73317aa332813d7bac99f6815015cb66 created without the httponly flag
-+ Entry '/xmlrpc/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
-+ "robots.txt" contains 14 entries which should be manually viewed.
++ Entry '/xmlrpc/' in robots.txt returned a non-forbidden or redirect HTTP code (200)+ "robots.txt" contains 14 entries which should be manually viewed.
 + IP address found in the 'location' header. The IP is "127.0.1.1".
 + OSVDB-630: IIS may reveal its internal or real IP in the Location header via a request to the /images directory. The value is "http://127.0.1.1:8081/images/".
 + OSVDB-39272: favicon.ico file identifies this server as: Joomla
@@ -184,9 +183,9 @@ nikto -h 172.31.6.2:8081
 + 8514 requests: 0 error(s) and 36 item(s) reported on remote host
 + End Time:           2017-07-29 06:06:55 (GMT-4) (2049 seconds)
 ---------------------------------------------------------------------------
-
+```
 From here we can see that we have a Joomla administrative interface to exploit as well as numerous directories for us to visit e.g. `/logs/`
-
+`
 
 ```
 nikto -h 172.31.6.2:9000
