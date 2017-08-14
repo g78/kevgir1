@@ -1,4 +1,4 @@
-Step 1. Enumerate the machine using nmap
+#Step 1. Enumerate the machine using nmap
 
 nmap -p 0-65535 -T5 -O -A 172.31.6.2
 
