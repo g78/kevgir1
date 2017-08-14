@@ -1,5 +1,5 @@
 # Enumerate the machine using nmap
-'''
+```
 nmap -p 0-65535 -T5 -O -A 172.31.6.2
 
 Starting Nmap 7.01 ( https://nmap.org ) at 2017-08-07 11:47 EDT
@@ -182,7 +182,7 @@ HOP RTT       ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 340.53 seconds
-'''
+```
 
 # Step 2. Refine the Results:
 Using the results of this scan we can further enumerate the identified services, ports and access points
