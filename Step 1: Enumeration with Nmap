@@ -1,8 +1,4 @@
-# Jenkins
-
-## Port scanning to identify Jenkins
-
-# Enumerate the machine using nmap
+##Enumerate the machine using nmap
 
 nmap -p 0-65535 -T5 -O -A 172.31.6.2
 
